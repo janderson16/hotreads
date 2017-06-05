@@ -1,0 +1,20 @@
+<h1>Hot Reads</h1>
+
+<table class="hot-reads" border="1" width="100%" style="margin: 0px;">
+  <tr>
+    <th>Status</th>
+    <th>URL</th>
+    <th>Times Read</th>
+  </tr>
+  <% @links.each do |link| %>
+  <tr>
+    <% if @links.first == link %>
+      <td>Top Link!</td>
+    <% else %>
+      <td>Hot Read!</td>
+    <% end %>
+    <td>link.url</td>
+    <td>link.read_count</td>
+  </tr>
+  <% end %>
+</table>
