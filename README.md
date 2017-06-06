@@ -1,14 +1,13 @@
 # HotReads
 
-This app works in conjunction with [URLockbox](https://obscure-basin-69091.herokuapp.com/links) [repo](https://github.com/janderson16/m4-final). It tracks URLockbox's 10 most commonly read links. You will find the links ranked in order of reads.
+This app works in conjunction with [URLockbox](https://obscure-basin-69091.herokuapp.com/links) [repo](https://github.com/janderson16/m4-final). It uses ajax calls from URLockbox to track the 10 most commonly read links. You will find the links ranked in order of reads.
 
 [Production link](https://peaceful-anchorage-24168.herokuapp.com/)
 
 #### The Nitty Gritty
 * Ruby 2.3.0
-* Rails 5.0.0.1
-* RSpec test suite w/ Selenium & Capybara
-* BCrpyt
+* Rails 5.1.1
+* RSpec test suite
 
 
 ## Setup
