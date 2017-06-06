@@ -2,13 +2,13 @@ class LinksController < ApplicationController
   skip_before_action :verify_authenticity_token
 
   def index
-    @links = Link.all
+    @links = Link.order('read_count DESC').limit(10)
   end
 
   def create
-    link = params["link"]["url"]
-    db_link = Link.find_or_create_by(url: link)
-    db_link.read_count += 1
+    url = params["link"]["url"]
+    link = Link.find_or_create_by(url: url)
+    link.update(read_count: link.read_count += 1)
   end
 
 end
