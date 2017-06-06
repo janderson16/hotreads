@@ -10,5 +10,4 @@ class LinksController < ApplicationController
     link = Link.find_or_create_by(url: url)
     link.update(read_count: link.read_count += 1)
   end
-
 end
